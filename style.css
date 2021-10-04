@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -73,5 +73,82 @@ select {
   }
 }
 
-/* CSS RESET ABOVE
+/* CSS RESET ABOVE */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #1f2937;
+  padding: 20px 100px 100px 100px;
+}
+
+.top-header {
+  display: flex;
+  gap: 20px;
+}
+
+.top-header :nth-child(2) {
+  margin-left: auto;
+}
+
+.header-logo {
+  width: 100px;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-header-left {
+  width: 400px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-btn {
+  width: 100px;
+  background-color: #3882f6;
+  border: none;
+  border-radius: 5px;
+  color: #f9faf8;
+}
+
+.main-img {
+  width: 400px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  line-height: 50px;
+}
+
+.secondary-text,
+a {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+a {
+  text-decoration: none;
+}
