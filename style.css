@@ -152,3 +152,39 @@ a {
 a {
   text-decoration: none;
 }
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.information-text {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bolder;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+.information-container-img-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.information-container-imgs {
+  width: 150px;
+}
+
+.information-images {
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+}
+
+.img-subtext {
+  font-size: 16px;
+  text-align: center;
+  color: #1f2937;
+}
